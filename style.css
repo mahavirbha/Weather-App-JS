@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right bottom, #f8cf17, #0a8a9b);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  height: 90vh;
+  background: url(img2.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  overflow: auto;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+  z-index: 0;
+}
+.top {
+  text-align: center;
+  z-index: 999;
+}
+
+.top h1 {
+  color: rgb(15, 48, 5);
+  line-height: 2;
+}
+
+.top input,
+.top button {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 5px;
+  outline: none;
+  border: none;
+}
+
+.top input {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: solid 2px green;
+  border-radius: 10px 0 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(250, 235, 215, 0.685);
+}
+.top input:focus {
+  color: white;
+  font-size: 15px;
+}
+.top input::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+.top button {
+  background-color: #db6400;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.top button:hover {
+  background-color: #b05102;
+}
+
+.top .error {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  transition: ease 0.3s;
+  text-decoration: underline red;
+}
+
+.icon {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.location {
+  padding-bottom: 5px;
+  text-align: center;
+  color: white;
+  line-height: 1.6;
+}
+
+.location .city {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.current {
+  width: 100%;
+  position: relative;
+  padding-top: 10px;
+  color: white;
+  text-align: left;
+  /* line-height: 1.3; */
+}
+
+.current::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.current > * {
+  padding-bottom: 10px;
+}
+
+.weather {
+  text-transform: capitalize;
+}
+
+.weather-icon {
+  background-color: #779e16;
+  border-radius: 50%;
+  /* margin-bottom: 100px; */
+  /* height: 60px; */
+  /* width: 60px; */
+}
+form {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.text > span {
+  font-size: larger;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.text {
+  /* @import url(https://fonts.googleapis.com/css?family=Open+Sans); */
+
+  /* body {
+ background: #111;
+ font-family: "Open Sans",  Impact;
+} */
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: rgb(3, 46, 13);
+  letter-spacing: 1px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  /* animation: 20s ease-in infinite; */
+  text-shadow: 0px 0px 3px rgb(221, 218, 10), 0px 0px 3px rgb(166, 168, 11);
+}
+/* 
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 1px rgb(3, 136, 125), 0px 0px 1px rgb(25, 201, 48),
+      0px 0px 2px rgb(25, 201, 48), 0px 0px 2px rgb(25, 201, 48),
+      0px 0px 3px rgb(5, 105, 19), 0px 0px 3px rgb(11, 119, 25),
+      0px 0px 4px rgb(134, 223, 33), 0px 0px 4px rgb(110, 201, 25),
+      0px 0px 5px rgb(183, 201, 25), 0px 0px 5px rgb(163, 201, 25),
+      0px 0px 6px rgb(201, 160, 25), 0px 0px 6px rgb(189, 201, 25),
+      0px 0px 7px rgb(25, 201, 177), 0px 0px 7px rgb(25, 201, 163),
+      0px 0px 8px rgb(25, 166, 201), 0px 0px 8px rgb(25, 189, 201),
+      0px 0px 9px rgb(25, 72, 201), 0px 0px 9px rgb(28, 25, 201);
+  }
+} */
