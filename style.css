@@ -20,8 +20,8 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 320px;
-  height: 90vh;
+  max-width: 620px;
+  height: 80vh;
   background: url(img2.jpg) no-repeat center;
   background-size: cover;
   border-radius: 10px;
